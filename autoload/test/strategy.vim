@@ -49,7 +49,7 @@ function! test#strategy#vimproc(cmd) abort
 endfunction
 
 function! test#strategy#neovim(cmd) abort
-  botright 10new
+  botright 30new
   call termopen(a:cmd)
   au BufDelete <buffer> wincmd p " switch back to last window
   startinsert
